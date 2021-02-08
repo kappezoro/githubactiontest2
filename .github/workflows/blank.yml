@@ -22,8 +22,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - with:
+          slot-name: stg
       - shell: bash
         env:
-          SUPER_SECRET: ${{ secrets.stg.SuperSecret }}
+          SUPER_SECRET: ${{ secrets.SuperSecret }}
         run: |
           echo "$SUPER_SECRET"
