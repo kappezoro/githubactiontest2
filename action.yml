@@ -1,0 +1,8 @@
+inputs:
+  name:
+    description: 'test2 main'
+runs:
+  steps:
+    - name: Test
+      run: echo $TTT;
+      shell: bash
